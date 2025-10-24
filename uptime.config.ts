@@ -44,15 +44,7 @@ const workerConfig: WorkerConfig = {
       // `target` is a valid URL
       target: 'https://iminshanghai-n8n.hf.space',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
-      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://example.com',
-      // [OPTIONAL] `hideLatencyChart` will hide status page latency chart if set to true
-      hideLatencyChart: false,
-      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      expectedCodes: [200],
-      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000,
+      timeout: 5000,
       // [OPTIONAL] headers to be sent
       headers: {
         'User-Agent': 'Uptimeflare',
