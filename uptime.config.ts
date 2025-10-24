@@ -14,7 +14,7 @@ const pageConfig: PageConfig = {
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
     '🌐 Public (example group name)': ['foo_monitor', 'bar_monitor', 'more monitor ids...'],
-    '🔐 Private': ['test_tcp_monitor'],
+    '🔐 Private': ['n8n'],
   },
   // [OPTIONAL] Set the path to your favicon, default to '/favicon.ico' if not specified
   favicon: '/favicon.ico',
@@ -36,13 +36,13 @@ const workerConfig: WorkerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'foo_monitor',
+      id: 'n8n',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
+      name: 'N8n Server',
       // `method` should be a valid HTTP Method
-      method: 'POST',
+      method: 'GET',
       // `target` is a valid URL
-      target: 'https://example.com',
+      target: 'https://iminshanghai-n8n.hf.space/',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
